@@ -1,8 +1,7 @@
 # Created by: Mageirias Anastasios <anastmag@gmail.com>
 
 PORTNAME=	clamfs
-PORTVERSION=	1.1.0
-PORTREVISION=	2
+PORTVERSION=	1.2.0
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/burghardt/${PORTNAME}/releases/download/${PORTNAME}-${PORTVERSION}/
 
@@ -18,7 +17,7 @@ LIB_DEPENDS=	libPocoFoundation.so:devel/poco \
 BUILD_DEPENDS=	boost-libs>=1.33:devel/boost-libs
 RUN_DEPENDS=	clamd:security/clamav
 
-USES=		compiler:c++11-lib autoreconf fuse
+USES=		compiler:c++11-lib autoreconf fuse:3 pkgconfig
 
 GNU_CONFIGURE=	yes
 
