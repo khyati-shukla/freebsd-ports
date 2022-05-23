@@ -1,7 +1,7 @@
 # Created by: Gleb Kurtsou <gleb@FreeBSD.org>
 
 PORTNAME=	pefs
-DISTVERSION=	g20210628
+DISTVERSION=	g20220405
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-kmod
@@ -19,8 +19,8 @@ BROKEN_FreeBSD_14=	crashes on mount due to INVARIANTS
 
 USES=		kmod uidfix
 USE_GITHUB=	yes
-GH_ACCOUNT=	DanielO
-GH_TAGNAME=	2adf8cb
+GH_ACCOUNT=	freebsd-pefs
+GH_TAGNAME=	4871d25
 
 MAKE_JOBS_UNSAFE=yes
 MAKE_ENV=	BINDIR="${PREFIX}/sbin" MANDIR="${MANPREFIX}/man/man"
